@@ -1,59 +1,103 @@
-# TekFlix
+# TekFlix 🎬
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.6.
+Bienvenue sur **TekFlix**, une application Angular de gestion et de découverte de films. Cette plateforme permet aux utilisateurs de parcourir une liste de films, de consulter leurs détails et d'ajouter des films à leurs favoris.
 
-## Development server
+## 🚀 Fonctionnalités principales
 
-To start a local development server, run:
+- 📄 Navigation fluide grâce au **routing** d'Angular
+- 🎥 Liste des films avec détails complets
+- ⭐ Ajout de films aux favoris
+- 🔍 Fonctionnalité de recherche de films
+- 🎨 Interface responsive avec **Bootstrap**
+- 🎭 Utilisation d'icônes avec **Font Awesome**
 
-```bash
-ng serve
-```
+## 🛠️ Technologies utilisées
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- [Angular](https://angular.io/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Font Awesome](https://fontawesome.com/)
 
-## Code scaffolding
+## ⚙️ Installation du projet
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 1️⃣ Prérequis
 
-```bash
-ng generate component component-name
-```
+Assurez-vous d'avoir installé :
+- [Node.js](https://nodejs.org/)
+- [Angular CLI](https://angular.io/cli)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### 2️⃣ Cloner le dépôt
 
 ```bash
-ng build
+git clone https://github.com/yosriharraby/TekFlix.git
+cd TekFlix
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### 3️⃣ Installer les dépendances
 
 ```bash
-ng test
+npm install
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### 4️⃣ Installer Bootstrap
 
 ```bash
-ng e2e
+npm install bootstrap
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Ajoutez cette ligne dans le fichier `angular.json` sous **architect > build > options > styles** :
 
-## Additional Resources
+```json
+"node_modules/bootstrap/dist/css/bootstrap.css"
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 5️⃣ Installer Font Awesome
+
+```bash
+npm install @fortawesome/fontawesome-free
+```
+
+Ajoutez cette ligne dans le fichier `angular.json` sous **architect > build > options > styles** :
+
+```json
+"node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+```
+
+## 💻 Lancer l'application
+
+Pour démarrer l'application en local :
+
+```bash
+ng serve --open
+```
+
+L'application sera accessible à l'adresse : `http://localhost:4200/`
+
+## 🏗️ Structure des composants
+
+- `HeaderComponent`: Barre de navigation en haut de la page
+- `FooterComponent`: Pied de page avec icônes et informations
+- `HomeComponent`: Page d'accueil
+- `MovieListComponent`: Liste des films
+- `MovieDetailComponent`: Détails d'un film spécifique
+- `FavoritesComponent`: Liste des films favoris
+- `SearchComponent`: Fonction de recherche de films
+
+## 📸 Contenu statique
+
+Ajoutez les images nécessaires dans le dossier `src/assets/public/`.
+
+## 📜 Licence
+
+Ce projet est à but éducatif et réalisé dans le cadre d'un TP Angular.
+
+## **Contact**
+
+If you have any questions or suggestions, feel free to reach out:
+
+- **Author**: Yosri Harraby
+- **Email**: yosriharrabi92@gmail.com
+- **GitHub**: [yosriharraby](https://github.com/yosriharraby)
+
+---
+
+**Bon codage !** 🚀
